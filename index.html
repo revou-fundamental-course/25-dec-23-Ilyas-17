@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Luas & keliling segitiga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1>Menghitung Luas dan keliling segitiga</h1>
+        </div>
+        
+                <div class="luas-segitiga">
+                    <h3>Luas Segitiga</h3>
+                    <img src="luas.png" alt="">
+                    <h4>Keterangan: L = ½ x alas x tinggi</h4>
+
+                    <div class="form">
+                        <label for="alas">Alas:</label>
+                        <input type="number" id="alas">
+                        <br>
+                        <label for="tinggi">Tinggi:</label>
+                        <input type="number" id="tinggi">
+                        <br>
+                        <button type="button" class="hitung" onclick="luasSegitiga()">HITUNG</button>
+                        <button type="button" class="reset" onclick="reset()">RESET</button>
+                        <br>
+                        <p id="hasil"></p>
+                    </div>   
+                </div>
+
+                <div class="luas-segitiga">
+                    <h3>Keliling Segitiga</h3>
+                    <img src="keliling-segitiga.png" alt="">
+                    <h4>Keterangan: K = a + b + c </h4>
+
+                    <div class="form">
+                        <label for="ab">SISI AB :</label>
+                        <input type="number" id="ab">
+                        <br>
+                        <label for="bc">SISI BC :</label>
+                        <input type="number" id="bc">
+                        <br>
+                        <label for="ca">SISI CA :</label>
+                        <input type="number" id="ca">
+                        <br>
+                        <button type="button" onclick="kelilingSegitiga()">HITUNG</button>
+                        <button type="button" onclick="reseta()">RESET</button>
+                        <br>
+                        <p id="hasil-keliling"></p>
+                    </div>   
+                </div>
+    </div>
+    
+
+<script src="script.js"></script>    
+</body>
+</html>
